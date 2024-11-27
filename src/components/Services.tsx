@@ -7,32 +7,32 @@ const services = [
   {
     title: 'Villes apprenantes',
     icon: <Cloud className="w-16 h-16 text-primary" />,
-    description: "Learning cities support lifelong education and development for everyone.",
+    description: "Le renforcement du capital humain pour les acteurs politiques, administratifs et associatifs selon une approche innovante orientée la réalisation des ODD axée sur le coaching territorial visant a assurer une mutation sociétale.Qualifier les communes africaines d'intégrer les réseaux mondiaux des villes apprenantes, durables ...",
   },
   {
     title: 'Villes intelligentes et durables',
     icon: <Code className="w-16 h-16 text-primary" />,
-    description: "Smart cities aim for sustainable urban development using technology and innovation.",
+    description: "Mettre en place pour les territoires à vocation urbaine un cadre stratégique et opérationnel contingent axé sur l’économie digitale, l’économie verte et l‘économie sociale et solidaire permettant la planification, la valorisation et le développement des territoires.",
   },
   {
     title: 'Villages intelligents et durables',
     icon: <LineChart className="w-16 h-16 text-primary" />,
-    description: "Smart villages embrace sustainable practices to ensure rural development.",
+    description: "Préparer pour les communes rurales un cadre stratégique et opérationnel de projets agricoles durables et de valorisation des produits issus des terroirs qui respectent les normes sanitaires et la chaine de valeurs agricoles.",
   },
   {
     title: 'Marque de territoire',
     icon: <Globe2 className="w-16 h-16 text-primary" />,
-    description: "Territorial branding attracts investments, tourists, and strengthens local identity.",
+    description: "Mettre en place un modèle de développement durable intègre et inclusif permettant la promotion de l'image de marque des territoires, en se basant sur l'identité culturel et la vocation naturelle de chaque territoire, par la modernisation de l'action publique locale, l'animation du territoire et la valorisation du patrimoine matériel et immatériel.",
   },
   {
     title: 'Entreprenariat social, coopérative agricole et startups',
     icon: <Globe2 className="w-16 h-16 text-primary" />,
-    description: "Empowering local communities through social entrepreneurship and agriculture.",
+    description: "Axe transverse vise à mettre en place un incubateur pour les jeunes cadres dans un centre de transfert de technologie intitulé «Cité des Métiers, des Compétences et de l'Innovation».",
   },
   {
     title: 'La gouvernance politique et institutionnelle',
     icon: <Globe2 className="w-16 h-16 text-primary" />,
-    description: "Improving governance mechanisms for political and institutional transparency.",
+    description: "Renforcer et moderniser le cadre institutionnel et politique favorisant une décentralisation avancée et une déconcentration poussée. Cette approche vise à assurer une mutation stratégique majeure avec un transfert des centres de décisions au plus proche des citoyens.",
   },
 ];
 
@@ -59,12 +59,18 @@ const ServiceCard = ({ index, title, icon, description }) => {
             {title}
           </h3>
 
-          {/* Animation de la description */}
+          {/* Animation de la description avec max-height */}
           <motion.p
             className="text-gray-600 text-sm text-center mt-4"
-            initial={{ opacity: 0 }} // La description commence invisible
-            animate={{ opacity: hovered ? 1 : 0 }} // La description devient visible au survol
+            initial={{ opacity: 0, maxHeight: 0 }} // La description commence invisible
+            animate={{
+              opacity: hovered ? 1 : 0,
+              maxHeight: hovered ? '200px' : 0, // Ajuste la hauteur maximale
+            }} // La description devient visible et se déploie au survol
             transition={{ duration: 0.3 }} // L'animation prend 0.3 seconde
+            style={{
+              overflow: 'hidden', // Cache le contenu excédentaire
+            }}
           >
             {description}
           </motion.p>
@@ -73,6 +79,7 @@ const ServiceCard = ({ index, title, icon, description }) => {
     </Tilt>
   );
 };
+
 
 const Services = () => {
   return (
