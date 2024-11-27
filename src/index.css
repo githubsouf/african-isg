@@ -30,4 +30,11 @@
   .text-gradient {
     @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
   }
+
+  @layer utilities {
+    .green-pink-gradient {
+      @apply bg-gradient-to-r from-green-400 to-pink-500;
+    }
+  }
+  
 }

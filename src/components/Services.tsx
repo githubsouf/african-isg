@@ -1,29 +1,45 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Tilt from 'react-parallax-tilt'; // Assurez-vous d'avoir installé react-parallax-tilt
 import { Cloud, Code, LineChart, Globe2 } from 'lucide-react';
 
 const services = [
   {
-    icon: <Cloud className="w-12 h-12" />,
     title: 'Cloud Solutions',
-    description: 'Enterprise-grade cloud infrastructure and migration services tailored for African businesses.'
+    icon: <Cloud className="w-16 h-16 text-primary" />,
   },
   {
-    icon: <Code className="w-12 h-12" />,
     title: 'Software Development',
-    description: 'Custom software solutions and digital platforms built with cutting-edge technologies.'
+    icon: <Code className="w-16 h-16 text-primary" />,
   },
   {
-    icon: <LineChart className="w-12 h-12" />,
     title: 'Digital Marketing',
-    description: 'Data-driven marketing strategies to enhance your digital presence and reach.'
+    icon: <LineChart className="w-16 h-16 text-primary" />,
   },
   {
-    icon: <Globe2 className="w-12 h-12" />,
     title: 'IT Consulting',
-    description: 'Expert guidance on digital transformation and technology implementation.'
-  }
+    icon: <Globe2 className="w-16 h-16 text-primary" />,
+  },
 ];
+
+const ServiceCard = ({ index, title, icon }) => (
+  <Tilt className="xs:w-[250px] w-full">
+    <motion.div
+      initial={{ opacity: 0, x: 20 * (index % 2 === 0 ? 1 : -1) }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.75, delay: index * 0.1 }}
+      // Utilisation de Tailwind pour le dégradé
+      className="w-full p-[4px]  rounded-[30px] shadow-card bg-gradient-to-r from-[#f9d322] to-[#e32b24]"
+    >
+      <div className="bg-white rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
+        <div>{icon}</div>
+        <h3 className="text-primary text-[20px] font-bold text-center">{title}</h3>
+      </div>
+    </motion.div>
+  </Tilt>
+);
+
 
 const Services = () => {
   return (
@@ -36,24 +52,16 @@ const Services = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">Our Services</h2>
-          <p className="text-xl text-gray-600">Comprehensive digital solutions for Africa's future</p>
+          <h2 className="text-4xl font-bold mb-4">Strategic areas of activity</h2>
+          <p className="text-xl text-gray-600">
+            Development strategies in Africa often face major governance challenges preventing an evolution towards a smart society. This calls on us to react with appropriate and
+            adapted mechanisms to strengthen “smart governance in Africa”.
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <motion.div
-              key={service.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
-            >
-              <div className="text-primary mb-4">{service.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-              <p className="text-gray-600">{service.description}</p>
-            </motion.div>
+            <ServiceCard key={service.title} index={index} title={service.title} icon={service.icon} />
           ))}
         </div>
       </div>
