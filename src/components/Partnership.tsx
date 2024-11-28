@@ -25,8 +25,8 @@ const partners = [
     logo: 'https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg',
   },
   {
-    name: 'Oracle',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg',
+    name: 'CONFIMPRESA',
+    logo: './confimpresa.jpg',
   },
   {
     name: 'B-CRYOJET',

@@ -8,7 +8,7 @@ function GlobeMesh() {
   const materialRef = useRef<THREE.ShaderMaterial>(null);
 
   // Load earth textures
-  const earthMap = useLoader(THREE.TextureLoader, '/globelights.png');
+  const earthMap = useLoader(THREE.TextureLoader, '/test4.png');
   const bumpMap = useLoader(THREE.TextureLoader, 'https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/earth_normal_2048.jpg');
 
   useFrame(({ clock }) => {
