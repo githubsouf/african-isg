@@ -2,7 +2,11 @@ import React, { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import gsap from "gsap";
 
-const Hero = () => {
+interface HeroProps {
+  onContactClick: () => void;
+}
+
+const Hero = ({ onContactClick }: HeroProps) => {
   const overlayRef = useRef<HTMLDivElement>(null);
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -93,12 +97,22 @@ const Hero = () => {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="flex flex-col sm:flex-row gap-4 mt-8"
         >
-          <button className="px-8 py-3 bg-[#f9d322] text-black rounded-full font-semibold transform hover:scale-105 transition-all duration-300 hover:shadow-[0_0_15px_rgba(249,211,34,0.5)] relative overflow-hidden group">
+             <button
+            onClick={onContactClick}
+            className="px-8 py-3 bg-[#f9d322] text-black rounded-full font-semibold 
+              transform hover:scale-105 transition-all duration-300 
+              hover:shadow-[0_0_15px_rgba(249,211,34,0.5)] relative overflow-hidden group"
+          >
             <span className="relative z-10">Learn More</span>
             <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
           </button>
 
-          <button className="px-8 py-3 bg-transparent border-2 border-[#f9d322] text-[#f9d322] rounded-full font-semibold transform hover:scale-105 transition-all duration-300 hover:shadow-[0_0_15px_rgba(249,211,34,0.3)] relative overflow-hidden group">
+          <button
+            onClick={onContactClick}
+            className="px-8 py-3 bg-transparent border-2 border-[#f9d322] text-[#f9d322] 
+              rounded-full font-semibold transform hover:scale-105 transition-all duration-300 
+              hover:shadow-[0_0_15px_rgba(249,211,34,0.3)] relative overflow-hidden group"
+          >
             <span className="relative z-10">Contact Us</span>
             <div className="absolute inset-0 bg-[#f9d322] opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
           </button>

@@ -2,7 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import LogoBall from './LogoBall';
 
-const Navbar = () => {
+interface NavbarProps {
+  onContactClick: () => void;
+}
+
+const Navbar = ({ onContactClick }: NavbarProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -19,8 +23,9 @@ const Navbar = () => {
     { name: 'Services', href: '#services' },
     { name: 'Projects', href: '#projects' },
     { name: 'Partnership', href: '#partnership' },
+    { name: 'Formation', href: '#formation' },
     { name: 'About', href: '#about' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Contact', href: '#contact', onClick: onContactClick },
   ];
 
   return (
@@ -43,6 +48,12 @@ const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
+                  onClick={(e) => {
+                    if (link.onClick) {
+                      e.preventDefault();
+                      link.onClick();
+                    }
+                  }}
                   className="relative text-[#eae9df] hover:text-[#f9d322] px-3 py-2 text-sm font-medium transition-colors duration-300 group"
                 >
                   {link.name}
@@ -74,8 +85,14 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
+                onClick={(e) => {
+                  if (link.onClick) {
+                    e.preventDefault();
+                    link.onClick();
+                  }
+                  setIsOpen(false);
+                }}
                 className="text-[#eae9df] hover:text-[#f9d322] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
-                onClick={() => setIsOpen(false)}
               >
                 {link.name}
               </a>
