@@ -7,32 +7,32 @@ const services = [
   {
     title: 'Villes apprenantes',
     icon: <Cloud className="w-16 h-16 text-primary" />,
-    description: "Strengthening human capital for political, administrative, and associative actors through an innovative approach focused on achieving the SDGs, centered around territorial coaching aimed at ensuring societal transformation. Qualifying African municipalities to integrate into the global networks of learning and sustainable cities...",
+    description: "Le renforcement du capital humain pour les acteurs politiques, administratifs et associatifs selon une approche innovante orientée la réalisation des ODD axée sur le coaching territorial visant a assurer une mutation sociétale.Qualifier les communes africaines d'intégrer les réseaux mondiaux des villes apprenantes, durables ...",
   },
   {
     title: 'Villes intelligentes et durables',
     icon: <Code className="w-16 h-16 text-primary" />,
-    description: "Establishing a strategic and operational framework for urban-oriented territories, focused on the digital economy, green economy, and social and solidarity economy, enabling the planning, enhancement, and development of the territories.",
+    description: "Mettre en place pour les territoires à vocation urbaine un cadre stratégique et opérationnel contingent axé sur l’économie digitale, l’économie verte et l‘économie sociale et solidaire permettant la planification, la valorisation et le développement des territoires.",
   },
   {
     title: 'Villages intelligents et durables',
     icon: <LineChart className="w-16 h-16 text-primary" />,
-    description: "Preparing a strategic and operational framework for rural municipalities focused on sustainable agricultural projects and the valorization of local products that comply with health standards and the agricultural value chain.",
+    description: "Préparer pour les communes rurales un cadre stratégique et opérationnel de projets agricoles durables et de valorisation des produits issus des terroirs qui respectent les normes sanitaires et la chaine de valeurs agricoles.",
   },
   {
     title: 'Marque de territoire',
     icon: <Globe2 className="w-16 h-16 text-primary" />,
-    description: "Establishing an integrated and inclusive sustainable development model that promotes the brand image of territories, based on the cultural identity and natural vocation of each area, through the modernization of local public action, territorial animation, and the enhancement of tangible and intangible heritage.",
+    description: "Mettre en place un modèle de développement durable intègre et inclusif permettant la promotion de l'image de marque des territoires, en se basant sur l'identité culturel et la vocation naturelle de chaque territoire, par la modernisation de l'action publique locale, l'animation du territoire et la valorisation du patrimoine matériel et immatériel.",
   },
   {
     title: 'Entreprenariat social, coopérative agricole et startups',
     icon: <Globe2 className="w-16 h-16 text-primary" />,
-    description: "The transversal focus is to establish an incubator for young professionals within a technology transfer center called 'City of Trades, Skills, and Innovation.'",
+    description: "Axe transverse vise à mettre en place un incubateur pour les jeunes cadres dans un centre de transfert de technologie intitulé «Cité des Métiers, des Compétences et de l'Innovation».",
   },
   {
     title: 'La gouvernance politique et institutionnelle',
     icon: <Globe2 className="w-16 h-16 text-primary" />,
-    description: "Strengthening and modernizing the institutional and political framework to promote advanced decentralization and deep deconcentration. This approach aims to ensure a major strategic transformation with the transfer of decision-making centers closer to the citizens.",
+    description: "Renforcer et moderniser le cadre institutionnel et politique favorisant une décentralisation avancée et une déconcentration poussée. Cette approche vise à assurer une mutation stratégique majeure avec un transfert des centres de décisions au plus proche des citoyens.",
   },
 ];
 
@@ -92,12 +92,10 @@ const Services = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">Strategic areas of activity</h2>
+          <h2 className="text-4xl font-bold mb-4">Domaines d'activités stratégiques</h2>
           <p className="text-xl text-gray-600">
-            Development strategies in Africa often face major governance
-            challenges preventing an evolution towards a smart society. This
-            calls on us to react with appropriate and adapted mechanisms to
-            strengthen “smart governance in Africa.”
+          Les stratégies de développement en Afrique sont souvent confrontées à des défis majeurs relevant de la gouvernance empêchant une évolution vers une société intelligente. Cela nous interpelle à réagir avec des mécanismes appropriés et adaptés pour renforcer la « gouvernance intelligente en Afrique »
+Cette initiative vise à transposer et partager le modèle de développement marocain dans le domaine de la gouvernance territoriales dans son aspect global.
           </p>
         </motion.div>
 
