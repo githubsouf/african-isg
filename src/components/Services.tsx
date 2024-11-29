@@ -47,29 +47,29 @@ const ServiceCard = ({ index, title, icon, description }) => {
         viewport={{ once: true }}
         transition={{ duration: 0.75, delay: index * 0.1 }}
         className="w-full p-[4px] rounded-[30px] shadow-card bg-gradient-to-r from-[#f9d322] to-[#e32b24]"
-        onMouseEnter={() => setHovered(true)} // Détecte le survol
-        onMouseLeave={() => setHovered(false)} // Détecte la sortie du survol
+        onMouseEnter={() => setHovered(true)} 
+        onMouseLeave={() => setHovered(false)} 
       >
         <div className="bg-white rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
-          {/* Icône */}
+          {}
           <div>{icon}</div>
           
-          {/* Titre */}
+          {}
           <h3 className="text-primary text-[20px] font-bold text-center">
             {title}
           </h3>
 
-          {/* Animation de la description avec max-height */}
+          {}
           <motion.p
             className="text-gray-600 text-sm text-center mt-4"
-            initial={{ opacity: 0, maxHeight: 0 }} // La description commence invisible
+            initial={{ opacity: 0, maxHeight: 0 }} 
             animate={{
               opacity: hovered ? 1 : 0,
-              maxHeight: hovered ? '200px' : 0, // Ajuste la hauteur maximale
-            }} // La description devient visible et se déploie au survol
-            transition={{ duration: 0.3 }} // L'animation prend 0.3 seconde
+              maxHeight: hovered ? '200px' : 0, 
+            }} 
+            transition={{ duration: 0.3 }} 
             style={{
-              overflow: 'hidden', // Cache le contenu excédentaire
+              overflow: 'hidden', 
             }}
           >
             {description}

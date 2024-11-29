@@ -85,9 +85,9 @@ const Hero = ({ onContactClick }: HeroProps) => {
           transition={{ duration: 0.8 }}
           className="text-4xl md:text-6xl lg:text-7xl font-bold text-center text-white mb-8"
         >
-          <span className="block">Empowering Africa's</span>
+          <span className="block">African Institute of Smart Governance</span>
           <span className="block bg-gradient-to-r from-[#f9d322] to-[#e32b24] bg-clip-text text-transparent">
-            Digital Transformation
+          Développement Territorial Integré et Inclusif
           </span>
         </motion.h1>
 
@@ -103,7 +103,7 @@ const Hero = ({ onContactClick }: HeroProps) => {
               transform hover:scale-105 transition-all duration-300 
               hover:shadow-[0_0_15px_rgba(249,211,34,0.5)] relative overflow-hidden group"
           >
-            <span className="relative z-10">Learn More</span>
+            <span className="relative z-10">En savoir plus</span>
             <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
           </button>
 
@@ -113,7 +113,7 @@ const Hero = ({ onContactClick }: HeroProps) => {
               rounded-full font-semibold transform hover:scale-105 transition-all duration-300 
               hover:shadow-[0_0_15px_rgba(249,211,34,0.3)] relative overflow-hidden group"
           >
-            <span className="relative z-10">Contact Us</span>
+            <span className="relative z-10">Contactez-nous</span>
             <div className="absolute inset-0 bg-[#f9d322] opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
           </button>
         </motion.div>

@@ -6,6 +6,14 @@ interface NavbarProps {
   onContactClick: () => void;
 }
 
+
+
+
+
+
+
+
+
 const Navbar = ({ onContactClick }: NavbarProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,13 +27,13 @@ const Navbar = ({ onContactClick }: NavbarProps) => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'Services', href: '#services' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Partnership', href: '#partnership' },
-    { name: 'Formation', href: '#formation' },
-    { name: 'About', href: '#about' },
-    { name: 'Contact', href: '#contact', onClick: onContactClick },
+    { name: 'ACCUEIL', href: '#home' },
+    { name: 'SERVICES', href: '#services' },
+    { name: 'PROJETS', href: '#projects' },
+    { name: 'PARTENAIRES', href: '#partnership' },
+    { name: 'FORMATIONS', href: '#formation' },
+    { name: 'QUI SOMMES-NOUS ?', href: '#about' },
+    { name: 'CONTACT', href: '#contact', onClick: onContactClick },
   ];
 
   return (
