@@ -7,32 +7,32 @@ const services = [
   {
     title: 'Villes apprenantes',
     icon: <Building2 className="w-16 h-16" />,
-    description: "Strengthening human capital for political, administrative, and associative actors through an innovative approach focused on achieving the SDGs, centered around territorial coaching aimed at ensuring societal transformation. Qualifying African municipalities to integrate into the global networks of learning and sustainable cities...",
+    description: "Le projet renforce les compétences des acteurs politiques et administratifs africains via une approche innovante, axée sur les ODD, le coaching territorial et l'intégration des communes africaines aux réseaux mondiaux des villes durables."
   },
   {
     title: 'Villes intelligentes et durables',
     icon: <MapPin className="w-16 h-16" />,
-    description: "Establishing a strategic and operational framework for urban-oriented territories, focused on the digital economy, green economy, and social and solidarity economy, enabling the planning, enhancement, and development of the territories.",
+    description: "Mettre en place un cadre stratégique pour les territoires urbains axé sur l'économie digitale, verte et sociale, afin de favoriser leur planification, valorisation et développement.",
   },
   {
     title: 'Villages intelligents et durables',
     icon: <Trees className="w-16 h-16" />,
-    description: "Preparing a strategic and operational framework for rural municipalities focused on sustainable agricultural projects and the valorization of local products that comply with health standards and the agricultural value chain.",
+    description: "Préparer pour les communes rurales un cadre stratégique et opérationnel de projets agricoles durables et de valorisation des produits issus des terroirs qui respectent les normes sanitaires et la chaine de valeurs agricoles.",
   },
   {
     title: 'Marque de territoire',
     icon: <Globe2 className="w-16 h-16" />,
-    description: "Establishing an integrated and inclusive sustainable development model that promotes the brand image of territories, based on the cultural identity and natural vocation of each area, through the modernization of local public action, territorial animation, and the enhancement of tangible and intangible heritage.",
+    description: "Mettre en place un modèle de développement durable inclusif pour promouvoir l'image des territoires, en valorisant leur identité culturelle et naturelle, à travers la modernisation de l’action publique, l’animation locale et la préservation du patrimoine.",
   },
   {
     title: 'Entreprenariat social, coopérative agricole et startups',
     icon: <Users2 className="w-16 h-16" />,
-    description: "The transversal focus is to establish an incubator for young professionals within a technology transfer center called 'City of Trades, Skills, and Innovation.'",
+    description: "Axe transverse vise à mettre en place un incubateur pour les jeunes cadres dans un centre de transfert de technologie intitulé «Cité des Métiers, des Compétences et de l'Innovation».",
   },
   {
     title: 'La gouvernance politique et institutionnelle',
     icon: <LandPlot className="w-16 h-16" />,
-    description: "Strengthening and modernizing the institutional and political framework to promote advanced decentralization and deep deconcentration. This approach aims to ensure a major strategic transformation with the transfer of decision-making centers closer to the citizens.",
+    description: "Renforcer et moderniser le cadre institutionnel pour favoriser une décentralisation avancée et une déconcentration, afin de rapprocher les centres de décision des citoyens et assurer une mutation stratégique.",
   },
 ];
 
