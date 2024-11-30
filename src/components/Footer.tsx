@@ -12,17 +12,17 @@ const Footer = () => {
               <span className="ml-2 text-xl font-bold">African ISG</span>
             </div>
             <p className="text-gray-400">
-              Empowering Africa's digital transformation through innovative technology solutions.
+            Stimuler la transformation numérique de l'Afrique grâce à des solutions technologiques innovantes.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#home" className="text-gray-400 hover:text-primary transition-colors">Home</a></li>
+              <li><a href="#home" className="text-gray-400 hover:text-primary transition-colors">Acceuil</a></li>
               <li><a href="#services" className="text-gray-400 hover:text-primary transition-colors">Services</a></li>
-              <li><a href="#projects" className="text-gray-400 hover:text-primary transition-colors">Projects</a></li>
-              <li><a href="#about" className="text-gray-400 hover:text-primary transition-colors">About</a></li>
+              <li><a href="#projects" className="text-gray-400 hover:text-primary transition-colors">Projets</a></li>
+              <li><a href="#about" className="text-gray-400 hover:text-primary transition-colors">Qui sommes-nous ?</a></li>
               <li><a href="#contact" className="text-gray-400 hover:text-primary transition-colors">Contact</a></li>
             </ul>
           </div>
@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Connect With Us</h3>
+            <h3 className="text-lg font-semibold mb-4">Connectez-vous avec nous</h3>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-primary transition-colors">
                 <Facebook className="h-6 w-6" />

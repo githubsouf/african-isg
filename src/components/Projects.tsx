@@ -30,8 +30,8 @@ const Projects = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">Our Projects</h2>
-          <p className="text-xl text-gray-600">Transforming Africa through innovative solutions</p>
+          <h2 className="text-4xl font-bold mb-4">Projets</h2>
+          <p className="text-xl text-gray-600">Transformer l'Afrique grâce à des solutions innovantes</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

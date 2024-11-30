@@ -7,12 +7,12 @@ const services = [
   {
     title: 'Villes apprenantes',
     icon: <Cloud className="w-16 h-16 text-primary" />,
-    description: "Le renforcement du capital humain pour les acteurs politiques, administratifs et associatifs selon une approche innovante orientée la réalisation des ODD axée sur le coaching territorial visant a assurer une mutation sociétale.Qualifier les communes africaines d'intégrer les réseaux mondiaux des villes apprenantes, durables ...",
+    description: "Le projet renforce les compétences des acteurs politiques et administratifs africains via une approche innovante, axée sur les ODD, le coaching territorial et l'intégration des communes africaines aux réseaux mondiaux des villes durables.",
   },
   {
     title: 'Villes intelligentes et durables',
     icon: <Code className="w-16 h-16 text-primary" />,
-    description: "Mettre en place pour les territoires à vocation urbaine un cadre stratégique et opérationnel contingent axé sur l’économie digitale, l’économie verte et l‘économie sociale et solidaire permettant la planification, la valorisation et le développement des territoires.",
+    description: "Mettre en place un cadre stratégique pour les territoires urbains axé sur l'économie digitale, verte et sociale, afin de favoriser leur planification, valorisation et développement.",
   },
   {
     title: 'Villages intelligents et durables',
@@ -22,7 +22,7 @@ const services = [
   {
     title: 'Marque de territoire',
     icon: <Globe2 className="w-16 h-16 text-primary" />,
-    description: "Mettre en place un modèle de développement durable intègre et inclusif permettant la promotion de l'image de marque des territoires, en se basant sur l'identité culturel et la vocation naturelle de chaque territoire, par la modernisation de l'action publique locale, l'animation du territoire et la valorisation du patrimoine matériel et immatériel.",
+    description: "Mettre en place un modèle de développement durable inclusif pour promouvoir l'image des territoires, en valorisant leur identité culturelle et naturelle, à travers la modernisation de l’action publique, l’animation locale et la préservation du patrimoine.",
   },
   {
     title: 'Entreprenariat social, coopérative agricole et startups',
@@ -32,7 +32,7 @@ const services = [
   {
     title: 'La gouvernance politique et institutionnelle',
     icon: <Globe2 className="w-16 h-16 text-primary" />,
-    description: "Renforcer et moderniser le cadre institutionnel et politique favorisant une décentralisation avancée et une déconcentration poussée. Cette approche vise à assurer une mutation stratégique majeure avec un transfert des centres de décisions au plus proche des citoyens.",
+    description: "Renforcer et moderniser le cadre institutionnel pour favoriser une décentralisation avancée et une déconcentration, afin de rapprocher les centres de décision des citoyens et assurer une mutation stratégique.",
   },
 ];
 

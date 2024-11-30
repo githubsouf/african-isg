@@ -45,9 +45,9 @@ const Partnership = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">Our Partners</h2>
+          <h2 className="text-4xl font-bold mb-4">Partenaires</h2>
           <p className="text-xl text-gray-600">
-            Collaborating with global leaders to drive innovation in Africa
+          Collaborer avec des leaders mondiaux pour stimuler l'innovation en Afrique
           </p>
         </motion.div>
 

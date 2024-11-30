@@ -14,8 +14,8 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">Contact Us</h2>
-          <p className="text-xl text-gray-600">Connect with us to transform the world, starting with Africa</p>
+          <h2 className="text-4xl font-bold mb-4">Contactez-nous</h2>
+          <p className="text-xl text-gray-600">Connectez-vous avec nous pour transformer le monde, en commençant par l'Afrique</p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -61,7 +61,7 @@ const Contact = () => {
 
             <form className="space-y-6 mt-8">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
+                <label htmlFor="name" className="block text-sm font-medium text-gray-700">Nom</label>
                 <input
                   type="text"
                   id="name"
@@ -88,7 +88,7 @@ const Contact = () => {
                 type="submit"
                 className="w-full bg-primary text-black font-semibold py-3 px-6 rounded-lg hover:shadow-lg transition-shadow duration-300"
               >
-                Send Message
+                Envoyer
               </button>
             </form>
           </motion.div>
